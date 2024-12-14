@@ -1,0 +1,31 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dominant Colors</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 50px;
+      }
+      .color-box {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        border: 1px solid #000;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Dominant Colors</h1>
+    <p>Here are the top 3 dominant colors from your image:</p>
+    <div>
+      {% for color in colors %}
+      <div class="color-box" style="background-color: {{ color }};"></div>
+      {% endfor %}
+    </div>
+    <a href="/">Upload another image</a>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload Image</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 50px;
+      }
+      form {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Dominant Color Extractor</h1>
+    <p>Upload an image to find its dominant colors!</p>
+    <form action="/" method="post" enctype="multipart/form-data">
+      <input type="file" name="image" accept="image/*" required />
+      <button type="submit">Go</button>
+    </form>
+  </body>
+</html>
